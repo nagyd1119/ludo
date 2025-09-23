@@ -1,4 +1,4 @@
-module com.example.tablazat {
+module com.example.table {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -11,6 +11,6 @@ module com.example.tablazat {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.example.tablazat to javafx.fxml;
-    exports com.example.tablazat;
+    opens com.example.table to javafx.fxml;
+    exports com.example.table;
 }
