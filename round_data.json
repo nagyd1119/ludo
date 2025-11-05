@@ -1,0 +1,114 @@
+[
+  {
+    "playerNames": [
+      "alma",
+      "korte"
+    ],
+    "playerTokens": {
+      "PLAYER_2": [
+        {
+          "origin": {
+            "x": 11,
+            "y": 11
+          },
+          "current": {
+            "x": 8,
+            "y": 7
+          },
+          "owner": "PLAYER_2"
+        },
+        {
+          "origin": {
+            "x": 11,
+            "y": 12
+          },
+          "current": {
+            "x": 8,
+            "y": 7
+          },
+          "owner": "PLAYER_2"
+        },
+        {
+          "origin": {
+            "x": 12,
+            "y": 11
+          },
+          "current": {
+            "x": 8,
+            "y": 7
+          },
+          "owner": "PLAYER_2"
+        },
+        {
+          "origin": {
+            "x": 12,
+            "y": 12
+          },
+          "current": {
+            "x": 8,
+            "y": 7
+          },
+          "owner": "PLAYER_2"
+        }
+      ],
+      "PLAYER_1": [
+        {
+          "origin": {
+            "x": 11,
+            "y": 2
+          },
+          "current": {
+            "x": 4,
+            "y": 6
+          },
+          "owner": "PLAYER_1"
+        },
+        {
+          "origin": {
+            "x": 11,
+            "y": 3
+          },
+          "current": {
+            "x": 11,
+            "y": 3
+          },
+          "owner": "PLAYER_1"
+        },
+        {
+          "origin": {
+            "x": 12,
+            "y": 2
+          },
+          "current": {
+            "x": 12,
+            "y": 2
+          },
+          "owner": "PLAYER_1"
+        },
+        {
+          "origin": {
+            "x": 12,
+            "y": 3
+          },
+          "current": {
+            "x": 12,
+            "y": 3
+          },
+          "owner": "PLAYER_1"
+        }
+      ]
+    },
+    "status": "PLAYER_2_WON"
+  },
+
+
+  {
+    "playerNames": [
+      "alma",
+      "korte",
+      "barack"
+    ],
+    "playerTokens": {},
+    "status": "PLAYER_3_WON"
+  }
+]

@@ -1,4 +1,4 @@
-module com.example.tablazat {
+module com.example.table {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,7 +10,17 @@ module com.example.tablazat {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires javafx.graphics;
+    requires org.tinylog.api;
+    requires java.desktop;
+    requires com.google.gson;
+    requires annotations;
 
-    opens com.example.tablazat to javafx.fxml;
-    exports com.example.tablazat;
+    opens hu.unideb.table to javafx.fxml;
+    exports hu.unideb.table.controller;
+    opens hu.unideb.table.controller to javafx.fxml;
+    exports hu.unideb.table.view;
+    opens hu.unideb.table.view to javafx.fxml;
+    opens hu.unideb.table.model.persistence to com.google.gson;
+    exports hu.unideb.table.model to com.google.gson;
 }

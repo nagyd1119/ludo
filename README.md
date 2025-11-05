@@ -1,7 +1,5 @@
-<div align="center">
+<div>
 
 # Table for Ludo
 
 </div>
-
-### This repo only serves the purpose of sharing the table made for Ludo.
