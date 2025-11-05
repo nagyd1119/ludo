@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane
+        fx:id="gridPane"
+        style="-fx-background-image: url(/board.png); -fx-background-size: 1000 1000;"
+        xmlns="http://javafx.com/javafx/22"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.example.table.TableController">
+</GridPane>
