@@ -22,5 +22,8 @@ module com.example.table {
     exports hu.unideb.table.view;
     opens hu.unideb.table.view to javafx.fxml;
     opens hu.unideb.table.model.persistence to com.google.gson;
-    exports hu.unideb.table.model to com.google.gson;
+    exports hu.unideb.table.model;
+    exports com.example.table;
+    exports hu.unideb.table.model.persistence;
+    opens com.example.table to javafx.fxml;
 }

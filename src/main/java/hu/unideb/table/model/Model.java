@@ -25,7 +25,7 @@ public class Model {
     public Queue<Player> players = new LinkedList<>();
     public final Map<Player, List<Point>> playerPaths = new HashMap<>();
     public final Map<Player, Token[]> playerTokens = new HashMap<>();
-    Set<Point> safeZones;
+    public Set<Point> safeZones;
     public Player currentPlayer = Player.PLAYER_1;
     public int numberOfConsecutiveSixes = 0;
     public final BooleanProperty boardChanged = new SimpleBooleanProperty(false);
