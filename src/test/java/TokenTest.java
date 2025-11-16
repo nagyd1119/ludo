@@ -71,4 +71,30 @@ class TokenTest {
     }
 
 
+    @Test
+    void canGameEnd() {
+        putAllTokenOnBoardForCurrentPlayer(model);
+
+        Point finishLine = model.playerPaths.get(model.currentPlayer).getLast();
+        assertEquals(finishLine, new Point(7, 6));
+
+        for (int i = 0; i <= 3; i++) {
+            model.playerTokens.get(model.currentPlayer)[i].current = finishLine;
+        }
+        model.isGameOver();
+        assertEquals(model.getGameStatus(), GameStatus.PLAYER_1_WON);
+
+    }
+
+    private static void putAllTokenOnBoardForCurrentPlayer(Model model){
+        var path = model.playerPaths.get(model.currentPlayer);
+        Point entry = path.get(0);
+        for (int i = 0; i <= 3; i++) {
+            model.playerTokens.get(model.currentPlayer)[i].current = new Point(entry);
+            model.playerTokens.get(model.currentPlayer)[i].potential = null;
+        }
+
+    }
+
+
 }

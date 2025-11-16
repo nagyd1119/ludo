@@ -1,3 +1,4 @@
+import hu.unideb.table.model.GameStatus;
 import hu.unideb.table.model.Model;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
@@ -39,6 +40,7 @@ class DiceTest{
         model.playerTokens.get(model.currentPlayer)[0].potential = null;
     }
 
+
     @Test
     void stateStaysValid() {
         putOneTokenOnBoardForCurrentPlayer(model);
@@ -50,5 +52,8 @@ class DiceTest{
             assertNotNull(model.getGameStatus());
         }
     }
+
+
+
 
 }
